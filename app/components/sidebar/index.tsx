@@ -22,7 +22,7 @@ const Sidebar = ({ sidebarOpen }: IProps) => {
           </li>
         </ul>
       </div>
-      <div className="fixed bottom-0 right-0 translate-x-[99px]">
+      <div className="fixed top-[29.1875rem] right-0 translate-x-[99px]">
         <Image src={bgimage} alt="background image" />
       </div>
     </section>

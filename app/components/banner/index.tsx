@@ -24,8 +24,12 @@ const Banner = () => {
         <Image src={bgpattern} alt="background-pattern-home-1" />
       </div> */}
       <div className="px-[8px] pt-[6.0625rem]">
-        <div>
-          <Image src={bgpattern2} alt="background-pattern-home-2" />
+        <div className="">
+          <Image
+            src={bgpattern2}
+            alt="background-pattern-home-2"
+            className="object-cover w-[100%]"
+          />
         </div>
       </div>
     </section>

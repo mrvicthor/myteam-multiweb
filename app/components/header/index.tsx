@@ -40,7 +40,10 @@ const Header = () => {
             />
           </button>
           {sidebarOpen && (
-            <div className="fixed top-0 bottom-0 left-0 right-0 bg-[#979797] z-10 opacity-40" />
+            <div
+              className="fixed top-0 bottom-0 left-0 right-0 bg-[#979797] z-10 opacity-40"
+              onClick={() => setSidebarOpen(false)}
+            />
           )}
           <Sidebar sidebarOpen={sidebarOpen} />
         </div>

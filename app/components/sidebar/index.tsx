@@ -1,4 +1,6 @@
 import { Button } from "../";
+import bgimage from "../../../public/images/bg-pattern-about-1-mobile-nav-1.svg";
+import Image from "next/image";
 
 type IProps = {
   sidebarOpen: boolean;
@@ -9,7 +11,7 @@ const Sidebar = ({ sidebarOpen }: IProps) => {
     <section
       className={`${
         sidebarOpen ? "active" : ""
-      } sidebar text-[#ffffff] bg-[#2C6269] h-screen fixed`}
+      } sidebar text-[#ffffff] bg-[#2C6269] z-[999] h-screen fixed md:hidden`}
     >
       <div className="pt-[7rem] pl-[3rem]">
         <ul className="flex flex-col gap-[1.5rem]">
@@ -19,6 +21,9 @@ const Sidebar = ({ sidebarOpen }: IProps) => {
             <Button title="contact us" href="/contact" />
           </li>
         </ul>
+      </div>
+      <div className="fixed bottom-0 right-0 translate-x-[99px]">
+        <Image src={bgimage} alt="background image" />
       </div>
     </section>
   );

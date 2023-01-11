@@ -1,8 +1,9 @@
-import { Banner } from "./components";
+import { Banner, Content } from "./components";
 export default function Page() {
   return (
     <>
       <Banner />
+      <Content />
     </>
   );
 }

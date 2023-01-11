@@ -20,7 +20,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-        <div className="px-[8px] pt-[6.1rem] md:pt-[9.75rem] md:grid md:justify-items-center lg:justify-items-end">
+        <div className="px-[8px] pt-[6.1rem] md:pt-[9.75rem] md:grid md:justify-items-center lg:justify-items-end lg:pt-[9.375rem]">
           <div className="md:w-[22.375rem]">
             <Image
               src={bgpattern2}
@@ -37,9 +37,9 @@ const Banner = () => {
           </div> */}
         </div>
       </div>
-      {/* <div className="px-[8px]">
+      <div className="hidden lg:block absolute top-[15.625rem] -left-[6.3rem]">
         <Image src={bgpattern} alt="background-pattern-home-1" />
-      </div> */}
+      </div>
     </section>
   );
 };

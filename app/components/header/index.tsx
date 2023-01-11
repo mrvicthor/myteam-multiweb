@@ -12,15 +12,19 @@ const Header = () => {
 
   return (
     <header>
-      <div className="px-6 pt-[3rem] md:px-[2.5rem] lg:max-w-[69.375rem] lg:mx-auto">
+      <div className="px-6 pt-[3rem] md:px-[2.5rem] lg:max-w-[69.375rem] lg:mx-auto lg:pt-[4.5625rem]">
         <div className="flex justify-between items-center text-[#ffffff]">
           <Link href="/" className="">
             <Image src={logo} alt="my-team logo" />
           </Link>
           <nav className="hidden md:block md:mr-auto md:pl-[3rem] font-semibold text-lg text-[#ffffff]">
             <ul className="flex gap-[2.5rem]">
-              <li>home</li>
-              <li>about</li>
+              <li className="cursor-pointer hover:text-[#f67e7e]">
+                <Link href="/home">home</Link>
+              </li>
+              <li className="cursor-pointer hover:text-[#f67e7e]">
+                <Link href="/about">about</Link>
+              </li>
             </ul>
           </nav>
           <div className="hidden md:flex border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer">

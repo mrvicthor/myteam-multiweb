@@ -1,6 +1,7 @@
 import { Button } from "../";
 import bgimage from "../../../public/images/bg-pattern-about-1-mobile-nav-1.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 type IProps = {
   sidebarOpen: boolean;
@@ -15,14 +16,18 @@ const Sidebar = ({ sidebarOpen }: IProps) => {
     >
       <div className="pt-[7rem] pl-[3rem]">
         <ul className="flex flex-col gap-[1.5rem]">
-          <li className=" text-lg font-semibold">home</li>
-          <li className=" text-lg font-semibold">about</li>
+          <li className=" text-lg font-semibold cursor-pointer">
+            <Link href="/">home</Link>
+          </li>
+          <li className=" text-lg font-semibold cursor-pointer">
+            <Link href="/about">about</Link>
+          </li>
           <li className="mt-[0.75rem] border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] flex items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer">
             <Button title="contact us" href="/contact" />
           </li>
         </ul>
       </div>
-      <div className="fixed top-[29.1875rem] right-0 translate-x-[99px]">
+      <div className="fixed top-[33.5rem] right-0 translate-x-[99px]">
         <Image src={bgimage} alt="background image" />
       </div>
     </section>

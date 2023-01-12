@@ -1,6 +1,6 @@
 import bgpattern from "../../../public/images/bg-pattern-home-1.svg";
 import bgpattern2 from "../../../public/images/bg-pattern-home-2.svg";
-import bgpattern3 from "../../../public/images/bg-pattern-home-3.svg";
+
 import Image from "next/image";
 
 const Banner = () => {
@@ -28,13 +28,6 @@ const Banner = () => {
               className="object-cover w-[100%] "
             />
           </div>
-          {/* <div className="">
-            <Image
-              src={bgpattern3}
-              alt="background-pattern-home-3"
-              className="object-cover w-[100%]"
-            />
-          </div> */}
         </div>
       </div>
       <div className="hidden lg:block absolute top-[15.625rem] -left-[6.3rem]">

@@ -13,6 +13,7 @@
 @layer base {
   body {
     font-family: "Livvic", sans-serif;
+    overflow-x: hidden;
   }
 }
 
@@ -35,5 +36,9 @@
   }
   .sidebar.active {
     transform: translateX(0%);
+  }
+
+  .article {
+    width: fit-content;
   }
 }

@@ -41,7 +41,7 @@ const Testimonials = () => {
       <div className="absolute bottom-0 right-0">
         <Image src={bgpattern5} alt="background pattern" />
       </div>
-      <div className="px-8 pt-[8.75rem] pb-[10.25rem]">
+      <div className="px-6 pt-[8.75rem] pb-[10.25rem]">
         <div>
           <h3 className="font-bold text-[2rem] leading-[2rem] text-center">
             Delivering real results for top companies. Some of our

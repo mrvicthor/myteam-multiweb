@@ -25,7 +25,7 @@ const Testimony = ({ description, role, name, icon }: IProps) => {
         </p>
       </div>
       <div className="relative h-[3.875rem] w-[3.875rem] rounded-full">
-        <Image src={icon} alt="kady beker" className="rounded-full" />
+        <Image src={icon} alt={name} className="rounded-full" fill />
       </div>
     </div>
   );

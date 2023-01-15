@@ -10,7 +10,7 @@ const Suggestion = () => {
       </div>
       <div className="px-1.5rem pt-[5.1875rem] md:pt-[4.75rem] lg:max-w-[69.375rem] lg:mx-auto lg:px-0">
         <div className=" flex flex-col items-center justify-center gap-[1.5rem] md:flex-row md:gap-[5.25rem] lg:gap-[16.25rem]">
-          <p className="text-[#012F34] font-bold text-[2rem] leading-[2rem] text-center lg:text-[3rem] leading-[3rem]">
+          <p className="text-[#012F34] font-bold text-[2rem] leading-[2rem] text-center lg:text-[3rem] lg:leading-[3rem]">
             Ready to get <br className="md:hidden" />
             started?
           </p>

@@ -2,9 +2,6 @@ import Image from "next/image";
 import bgpattern5 from "../../../public/images/bg-pattern-home-5.svg";
 import bgpattern6 from "../../../public/images/bg-pattern-home-4-about-3.svg";
 import { Testimonial } from "../";
-import kadyImg from "../../../public/images/avatar-kady.jpg";
-import aiyshaImg from "../../../public/images/avatar-aiysha.jpg";
-import arthurImg from "../../../public/images/avatar-arthur.jpg";
 
 const Testimonials = () => {
   const testimonies = [
@@ -41,13 +38,13 @@ const Testimonials = () => {
       <div className="absolute bottom-0 right-0">
         <Image src={bgpattern5} alt="background pattern" />
       </div>
-      <div className="px-6 pt-[2.5rem] pb-[10.25rem]">
+      <div className="px-6 pt-[2.5rem] pb-[10.25rem] md:px-[6.125rem] md:pt-0 md:pb-[6.25rem] lg:max-w-[69.375rem] lg:mx-auto lg:px-8 lg:pt-[2.5rem] lg:pb-[8.75rem]">
         <div>
-          <h3 className="font-bold text-[2rem] leading-[2rem] text-center">
+          <h3 className="font-bold text-[2rem] leading-[2rem] text-center lg:text-[3rem] leading-[3rem]">
             Delivering real results for top companies. Some of our
             <span className="text-[#79C8C7]"> success stories.</span>
           </h3>
-          <div className="mt-[3rem] flex flex-col items-center gap-[3rem]">
+          <div className="mt-[3rem] flex flex-col items-center gap-[3rem] lg:flex-row lg:gap-[1.875rem]">
             {testimonies.map((item) => (
               <Testimonial
                 name={item.name}

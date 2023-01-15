@@ -6,6 +6,7 @@ import Services from "./services";
 import Service from "./service";
 import Testimonials from "./testimonials";
 import Testimonial from "./testimony";
+import Suggestion from "./suggestion";
 
 export {
   Services,
@@ -16,4 +17,5 @@ export {
   Service,
   Testimonials,
   Testimonial,
+  Suggestion,
 };

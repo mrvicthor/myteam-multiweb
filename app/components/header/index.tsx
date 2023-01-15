@@ -27,7 +27,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="hidden md:flex border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer">
+          <div className="hidden md:flex border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer font-semibold ">
             <Button href="/contact" title="contact us" />
           </div>
           <button

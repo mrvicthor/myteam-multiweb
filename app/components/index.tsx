@@ -7,6 +7,7 @@ import Service from "./service";
 import Testimonials from "./testimonials";
 import Testimonial from "./testimony";
 import Suggestion from "./suggestion";
+import Footer from "./footer";
 
 export {
   Services,
@@ -18,4 +19,5 @@ export {
   Testimonials,
   Testimonial,
   Suggestion,
+  Footer,
 };

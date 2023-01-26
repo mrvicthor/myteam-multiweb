@@ -18,6 +18,10 @@
 }
 
 @layer components {
+  .container {
+    max-width: 69.375rem;
+  }
+
   .sr-only {
     position: absolute;
     width: 1px;

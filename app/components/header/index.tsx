@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="px-6 pt-[3rem] md:px-[2.5rem] lg:max-w-[69.375rem] lg:mx-auto lg:pt-[4.5625rem]">
+      <div className="pt-[3rem] md:px-[2.5rem] container lg:pt-[4.5625rem]">
         <div className="flex justify-between items-center text-[#ffffff]">
           <Link href="/" className="">
             <Image src={logo} alt="my-team logo" />

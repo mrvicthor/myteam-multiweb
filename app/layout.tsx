@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 
 export default function RootLayout({
   children,
@@ -12,6 +12,7 @@ export default function RootLayout({
       <body className="bg-[#014E56]">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

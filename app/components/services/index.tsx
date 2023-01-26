@@ -37,7 +37,7 @@ const Services = () => {
       <div className="h-[15.25rem] w-[12.5rem] absolute -right-[6.25rem] overflow-hidden lg:bottom-0">
         <Image src={bgpattern3} alt="background-pattern-home-3" className="" />
       </div>
-      <div className="py-[4rem] px-[1.5rem] md:px-[6.125rem] md:py-[6.25rem] lg:py-[8.75rem] lg:max-w-[69.375rem] lg:mx-auto lg:flex lg:gap-[6.8125rem] lg:px-8">
+      <div className="py-[4rem]  md:px-[6.125rem] md:py-[6.25rem] lg:py-[8.75rem] container lg:flex lg:gap-[6.8125rem] lg:px-8">
         <div className="w-[15rem] md:w-[27.8125rem] lg:w-[30rem]">
           <div className="bg-[#F67E7E] h-[0.25rem] w-[3.125rem]" />
           <article className="mt-[2rem] lg:h-[9rem] lg:mt-[3.375rem]">

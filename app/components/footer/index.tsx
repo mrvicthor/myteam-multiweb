@@ -1,14 +1,10 @@
 import Link from "next/link";
-import logo from "./images/logo.svg";
-import facebookLogo from "./images/icon-facebook.svg";
-import linkedInLogo from "./images/icon-icon-linkedin.svg";
-import twitterLogo from "./images/icon-icon-twitter.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="bg-[#002529] pt-[4.125rem] pb-[4rem] text-[#ffffff]">
-      <section className="container space-y-[1.5rem]">
-        <div className="flex flex-col items-center space-y-[1.5rem]">
+    <footer className="bg-[#002529] pt-[4.125rem] pb-[4rem] text-[#ffffff] md:pt-[3.5rem]">
+      <section className="container space-y-[1.5rem] md:px-[2.5rem] md:grid md:grid-cols-2 md:space-y-0 md:gap-[2.125rem] lg:grid-cols-5">
+        <div className="flex flex-col items-center space-y-[1.5rem] md:items-start md:space-y-[3rem]">
           <div className="h-[1.5rem] w-[6rem] relative">
             <Link href="/" className="h-[1.5rem] w-[1.5rem]">
               <Image
@@ -21,18 +17,21 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex space-x-[1.5rem] leading-[1.5625rem]">
-            <Link href="/" className="font-bold text-[0.9375rem]">
+            <Link
+              href="/"
+              className="font-bold text-[0.9375rem] hover:text-[#f67e7e] cursor-pointer"
+            >
               home
             </Link>
             <Link
               href="/about"
-              className="font-bold text-[0.9375rem] leading-[1.5625rem]"
+              className="font-bold text-[0.9375rem] leading-[1.5625rem] hover:text-[#f67e7e] cursor-pointer"
             >
               about
             </Link>
           </div>
         </div>
-        <div className="text-center opacity-60 font-bold text-[0.9375rem] leading-[1.5625rem]">
+        <div className="text-center opacity-60 font-bold text-[0.9375rem] leading-[1.5625rem] md:text-right lg:text-left">
           987 Hillcrest Lane
           <br />
           Irvine, CA
@@ -41,17 +40,17 @@ const Footer = () => {
           <br />
           Call Us : 949-833-7432
         </div>
-        <div className="pt-[1rem]">
+        <div className="pt-[1rem] md:flex md:justify-between md:col-span-2 md:items-center md:pt-0 lg:col-start-3 lg:col-end-6 lg:flex-col lg:items-end">
           <div className="flex space-x-4 items-center justify-center">
             <a
               href="https://www.facebook.com/outtaspace1"
               target="_blank"
-              className="h-[1.5rem] w-[1.5rem] rounded hover:text-[#f67e7e] block relative rounded-md"
+              className="h-[1.5rem] w-[1.5rem] rounded hover:text-[#f67e7e] block relative rounded-md footer-social-icons"
             >
               <Image
                 src={`/images/icon-facebook.svg`}
                 alt="Facebook logo"
-                className="object-cover"
+                className="object-cover hover:text-[#f67e7e]"
                 width="24"
                 height="24"
               />
@@ -59,7 +58,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/victor-eleanya-87a06543/"
               target="_blank"
-              className="h-[1.5rem] w-[1.5rem] hover:text-[#f67e7e] block relative rounded-md"
+              className="h-[1.5rem] w-[1.5rem] hover:text-[#f67e7e] block relative rounded-md footer-social-icons"
             >
               <Image
                 src={`/images/icon-linkedin.svg`}
@@ -72,7 +71,7 @@ const Footer = () => {
             <a
               href="https://twitter.com/eva_skillz"
               target="_blank"
-              className="h-[1.5rem] w-[1.5rem] hover:text-[#f67e7e] block relative rounded-md"
+              className="h-[1.5rem] w-[1.5rem] hover:text-[#f67e7e] block relative rounded-md footer-social-icons"
             >
               <Image
                 src={`/images/icon-twitter.svg`}
@@ -83,7 +82,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <p className="text-center mt-4 opacity-60 text-[0.9375rem] leading-[1.5625rem]">
+          <p className="text-center mt-4 opacity-60 text-[0.9375rem] leading-[1.5625rem] md:mt-0">
             Copyright 2020. All Rights Reserved
           </p>
         </div>

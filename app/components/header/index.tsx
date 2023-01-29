@@ -49,7 +49,7 @@ const Header = () => {
               onClick={() => setSidebarOpen(false)}
             />
           )}
-          <Sidebar sidebarOpen={sidebarOpen} />
+          <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         </div>
       </div>
     </header>

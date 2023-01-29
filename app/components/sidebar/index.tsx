@@ -5,9 +5,10 @@ import Link from "next/link";
 
 type IProps = {
   sidebarOpen: boolean;
+  setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Sidebar = ({ sidebarOpen }: IProps) => {
+const Sidebar = ({ sidebarOpen, setSidebarOpen }: IProps) => {
   return (
     <section
       className={`${
@@ -16,13 +17,22 @@ const Sidebar = ({ sidebarOpen }: IProps) => {
     >
       <div className="pt-[7rem] pl-[3rem]">
         <ul className="flex flex-col gap-[1.5rem]">
-          <li className=" text-lg font-semibold cursor-pointer">
+          <li
+            className=" text-lg font-semibold cursor-pointer "
+            onClick={() => setSidebarOpen(false)}
+          >
             <Link href="/">home</Link>
           </li>
-          <li className=" text-lg font-semibold cursor-pointer">
+          <li
+            className=" text-lg font-semibold cursor-pointer"
+            onClick={() => setSidebarOpen(false)}
+          >
             <Link href="/about">about</Link>
           </li>
-          <li className="mt-[0.75rem] border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] flex items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer">
+          <li
+            onClick={() => setSidebarOpen(false)}
+            className="mt-[0.75rem] border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] flex items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer"
+          >
             <Button title="contact us" href="/contact" />
           </li>
         </ul>

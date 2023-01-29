@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebookSquare, FaTwitter, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-[#002529] pt-[4.125rem] pb-[4rem] text-[#ffffff] md:pt-[3.5rem]">
@@ -47,39 +48,21 @@ const Footer = () => {
               target="_blank"
               className="h-[1.5rem] w-[1.5rem] rounded hover:text-[#f67e7e] block relative rounded-md footer-social-icons"
             >
-              <Image
-                src={`/images/icon-facebook.svg`}
-                alt="Facebook logo"
-                className="object-cover hover:text-[#f67e7e]"
-                width="24"
-                height="24"
-              />
+              <FaFacebookSquare size={24} />
             </a>
             <a
               href="https://www.linkedin.com/in/victor-eleanya-87a06543/"
               target="_blank"
               className="h-[1.5rem] w-[1.5rem] hover:text-[#f67e7e] block relative rounded-md footer-social-icons"
             >
-              <Image
-                src={`/images/icon-linkedin.svg`}
-                alt="LinkedIn logo"
-                className="object-cover"
-                width="24"
-                height="24"
-              />
+              <FaLinkedin size={24} />
             </a>
             <a
               href="https://twitter.com/eva_skillz"
               target="_blank"
               className="h-[1.5rem] w-[1.5rem] hover:text-[#f67e7e] block relative rounded-md footer-social-icons"
             >
-              <Image
-                src={`/images/icon-twitter.svg`}
-                alt="Twitter logo"
-                className="object-cover"
-                width="24"
-                height="24"
-              />
+              <FaTwitter size={24} />
             </a>
           </div>
           <p className="text-center mt-4 opacity-60 text-[0.9375rem] leading-[1.5625rem] md:mt-0">

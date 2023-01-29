@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section>
       <div className="pt-[5rem] text-[#ffffff] md:pt-[7rem] lg:pt-[8.0625rem] container">
-        <div className="flex flex-col gap-[1.125rem] lg:flex-row lg:px-8 lg:gap-[1.875rem]">
+        <div className="flex flex-col space-y-[1.125rem] lg:space-y-0 lg:flex-row lg:px-8 lg:space-x-[1.875rem]">
           <h1 className="font-bold text-[2.5rem] leading-[2.5rem] text-center md:text-[4rem] leading-[3.5rem] lg:w-[39.6875rem] lg:text-[6.25rem] lg:leading-[6.25rem] lg:text-left">
             Find the <br /> best <span className="text-[#f67e7e]">talent</span>
           </h1>

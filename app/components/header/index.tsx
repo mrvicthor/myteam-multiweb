@@ -20,7 +20,7 @@ const Header = () => {
           <nav className="hidden md:block md:mr-auto md:pl-[3rem] font-semibold text-lg text-[#ffffff]">
             <ul className="flex gap-[2.5rem]">
               <li className="cursor-pointer hover:text-[#f67e7e]">
-                <Link href="/home">home</Link>
+                <Link href="/">home</Link>
               </li>
               <li className="cursor-pointer hover:text-[#f67e7e]">
                 <Link href="/about">about</Link>

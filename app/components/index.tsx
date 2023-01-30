@@ -9,6 +9,7 @@ import Testimonial from "./testimony";
 import Suggestion from "./suggestion";
 import Footer from "./footer";
 import Directors from "./directors";
+import Director from "./director";
 
 export {
   Services,
@@ -21,5 +22,6 @@ export {
   Testimonial,
   Suggestion,
   Footer,
-  Directors
+  Directors,
+  Director,
 };

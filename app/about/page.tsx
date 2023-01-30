@@ -1,6 +1,8 @@
-import aboutBgPattern from "../../public/images/bg-pattern-about-4.svg";
-import bgPattern from "../../public/images/bg-pattern-about-2-contact-1.svg";
+import bgPattern from "../../public/images/bg-pattern-about-4.svg";
+import bgPattern2 from "../../public/images/bg-pattern-about-2-contact-1.svg";
 import aboutPattern from "../../public/images/bg-pattern-about-1-mobile-nav-1.svg";
+// import bgPattern3 from "../../public/images/bg-pattern-home-3.svg";
+import bgPattern3 from "../../public/images/bg-pattern-home-4-about-3.svg";
 import Image from "next/image";
 import { Directors } from "../components";
 
@@ -29,10 +31,6 @@ const About = () => {
         <div className="absolute -right-[6.375rem] top-[20.5rem] h-[12.75rem] w-[12.75rem] md:top-[14.8rem]">
           <Image src={aboutPattern} alt="background pattern" />
         </div>
-
-        {/* <div className="relative">
-        <Image src={bgPattern} alt="background pattern" />
-      </div> */}
       </section>
       <Directors />
     </>

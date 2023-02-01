@@ -2,9 +2,9 @@ import bgPattern from "../../public/images/bg-pattern-about-4.svg";
 import bgPattern2 from "../../public/images/bg-pattern-about-2-contact-1.svg";
 import aboutPattern from "../../public/images/bg-pattern-about-1-mobile-nav-1.svg";
 // import bgPattern3 from "../../public/images/bg-pattern-home-3.svg";
-import bgPattern3 from "../../public/images/bg-pattern-home-4-about-3.svg";
+
 import Image from "next/image";
-import { Directors } from "../components";
+import { Directors, Customers } from "../components";
 
 const About = () => {
   return (
@@ -33,6 +33,8 @@ const About = () => {
         </div>
       </section>
       <Directors />
+      <div className="h-[5.5rem] bg-[#F2F2F2] md:hidden" />
+      <Customers />
     </>
   );
 };

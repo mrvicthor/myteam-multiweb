@@ -10,6 +10,7 @@ import Suggestion from "./suggestion";
 import Footer from "./footer";
 import Directors from "./directors";
 import Director from "./director";
+import Customers from "./customers";
 
 export {
   Services,
@@ -24,4 +25,5 @@ export {
   Footer,
   Directors,
   Director,
+  Customers,
 };

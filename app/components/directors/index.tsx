@@ -60,11 +60,11 @@ const Directors = () => {
       <div className="relative -top-[6.25rem] -left-[6.25rem] md:top-0">
         <Image src={bgPattern} alt="background pattern" />
       </div>
-      <div className="container relative z-[10] md:-top-[6rem]">
-        <h2 className="font-bold text-[2rem] leading-[2rem] text-center">
+      <div className="container relative z-[10] md:-top-[6rem] lg:-top-[4.75rem]">
+        <h2 className="font-bold text-[2rem] leading-[2rem] text-center lg:text-[3rem] leading-[3rem]">
           Meet the directors
         </h2>
-        <div className="grid mt-12 gap-[3.25rem] pb-[1.75rem] md:grid-cols-2 md:gap-x-[0.6875rem] md:px-[4.625rem] md:gap-y-[3rem]">
+        <div className="grid mt-12 gap-[3.25rem] pb-[1.75rem] md:grid-cols-2 md:gap-x-[0.6875rem] md:px-[4.625rem] md:gap-y-[3rem] lg:grid-cols-3 lg:gap-x-[1.875rem] lg:px-6 lg:pb-16">
           {directors.map((director) => (
             <Director
               key={director.id}

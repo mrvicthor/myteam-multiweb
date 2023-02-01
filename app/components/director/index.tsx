@@ -19,7 +19,7 @@ const Director = ({ title, name, icon, content }: IProps) => {
     <div
       className={`bg-[#012F34] ${
         showMore ? "pt-[2.1875rem]" : "pt-8"
-      } flex flex-col items-center`}
+      } flex flex-col items-center group cursor-pointer`}
     >
       {showMore ? (
         <article className="px-[2.8856rem]">
@@ -46,7 +46,7 @@ const Director = ({ title, name, icon, content }: IProps) => {
         </article>
       ) : (
         <>
-          <div className="relative w-[6rem] h-[6rem] rounded-full">
+          <div className="relative w-[6rem] h-[6rem] rounded-full group-hover:scale-110 ease-in duration-300">
             <Image
               src={icon}
               alt={name}
@@ -69,7 +69,7 @@ const Director = ({ title, name, icon, content }: IProps) => {
         onClick={() => setShowMore(!showMore)}
         className={`relative ${
           showMore ? "bg-[#79C8C7]" : "bg-[#f67e7e]"
-        } h-[3.5rem] w-[3.5rem] rounded-full flex items-center justify-center top-[1.75rem]`}
+        } h-[3.5rem] w-[3.5rem] rounded-full flex items-center justify-center top-[1.75rem] group-hover:animate-spin`}
       >
         {showMore ? (
           <Image src={closeIcon} alt="close icon" className="rounded-full" />

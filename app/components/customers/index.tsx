@@ -14,11 +14,11 @@ const Customers = () => {
       <div className="relative -top-[6.25rem] -left-[6.25rem] md:left-0 lg:top-0">
         <Image src={bgPattern3} alt="background pattern" />
       </div>
-      <div className="space-y-16 container relative -top-[8rem] lg:-top-[4rem] lg:pb-10">
+      <div className="space-y-16 container relative -top-[8rem] lg:-top-[4rem] lg:pb-10 overflow-hidden">
         <h4 className="font-bold text-[2rem] leading-[2rem] text-center text-[#ffffff]">
           Some of our clients
         </h4>
-        <ul className="grid gap-y-12 px-[5.125rem] md:px-6 md:grid-cols-5 md:gap-x-8 md:gap-y-0 lg:gap-x-12">
+        <ul className="flex flex-col gap-y-12 px-[5.125rem] md:flex-row md:px-6 md:gap-x-8 md:gap-y-0 lg:gap-x-12 md:slide-track ">
           {customers.map((customer) => (
             <li key={customer.id} className="relative h-8 w-full md:h-6">
               <Image

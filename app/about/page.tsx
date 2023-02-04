@@ -28,7 +28,7 @@ const About = () => {
           </article>
         </div>
 
-        <div className="absolute -right-[6.375rem] top-[20.5rem] h-[12.75rem] w-[12.75rem] md:top-[14.8rem]">
+        <div className="absolute -right-[6.375rem] top-[20.5rem] h-[12.75rem] w-[12.75rem] md:top-[13rem] lg:top-[18rem]">
           <Image src={aboutPattern} alt="background pattern" />
         </div>
       </section>

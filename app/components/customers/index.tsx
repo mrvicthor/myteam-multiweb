@@ -1,5 +1,9 @@
+"use client";
 import Image from "next/image";
 import bgPattern3 from "../../../public/images/bg-pattern-about-4.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Autoplay } from "swiper";
 
 const Customers = () => {
   const customers = [
@@ -18,14 +22,38 @@ const Customers = () => {
         <h4 className="font-bold text-[2rem] leading-[2rem] text-center text-[#ffffff]">
           Some of our clients
         </h4>
-        <ul className="flex flex-col gap-y-12 px-[5.125rem] md:flex-row md:px-6 md:gap-x-8 md:gap-y-0 lg:gap-x-12 md:slide-track ">
+        <div className="hidden md:block md:px-6 lg:gap-x-12">
+          <Swiper
+            spaceBetween={40}
+            modules={[Autoplay]}
+            loop
+            autoplay={{ delay: 0, disableOnInteraction: false }}
+            speed={10000}
+            slidesPerView={4}
+          >
+            {customers.map((customer) => (
+              <SwiperSlide key={customer.id}>
+                <div className="relative h-8 w-full md:h-6">
+                  <Image
+                    src={customer.logo}
+                    alt={customer.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw,
+        (max-width: 1200px) 50vw,
+        33vw"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <ul className="flex flex-col gap-y-12 px-[5.125rem] md:hidden">
           {customers.map((customer) => (
             <li key={customer.id} className="relative h-8 w-full md:h-6">
               <Image
                 src={customer.logo}
                 alt={customer.name}
                 fill
-                className=""
                 sizes="(max-width: 768px) 100vw,
         (max-width: 1200px) 50vw,
         33vw"

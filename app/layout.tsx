@@ -1,3 +1,4 @@
+import "swiper/swiper.min.css";
 import "../styles/globals.css";
 import { Header, Footer } from "./components";
 

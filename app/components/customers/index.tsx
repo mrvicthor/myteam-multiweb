@@ -18,13 +18,13 @@ const Customers = () => {
       <div className="relative -top-[6.25rem] -left-[6.25rem] md:left-0 lg:top-0">
         <Image src={bgPattern3} alt="background pattern" />
       </div>
-      <div className="space-y-16 container relative -top-[8rem] lg:-top-[4rem] lg:pb-10 overflow-hidden">
-        <h4 className="font-bold text-[2rem] leading-[2rem] text-center text-[#ffffff]">
+      <div className="space-y-16 container relative -top-[8rem] md:-top-[6rem] lg:-top-[4rem] lg:pb-10 overflow-hidden">
+        <h4 className="font-bold text-[2rem] leading-[2rem] text-center text-[#ffffff] lg:text-[3rem] lg:leading-[3rem]">
           Some of our clients
         </h4>
         <div className="hidden md:block md:px-6 lg:gap-x-12">
           <Swiper
-            spaceBetween={40}
+            spaceBetween={80}
             modules={[Autoplay]}
             loop
             autoplay={{ delay: 0, disableOnInteraction: false }}

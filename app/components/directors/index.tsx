@@ -56,15 +56,15 @@ const Directors = () => {
     },
   ];
   return (
-    <section className="bg-[#004047] text-[#ffffff] overflow-hidden">
+    <section className="overflow-hidden bg-[#004047] text-[#ffffff]">
       <div className="relative -top-[6.25rem] -left-[6.25rem] md:top-0">
         <Image src={bgPattern} alt="background pattern" />
       </div>
       <div className="container relative z-[10] md:-top-[6rem] lg:-top-[4.75rem]">
-        <h2 className="font-bold text-[2rem] leading-[2rem] text-center lg:text-[3rem] leading-[3rem]">
+        <h2 className="text-center text-[2rem] font-bold leading-[2rem] lg:text-[3rem] lg:leading-[3rem]">
           Meet the directors
         </h2>
-        <div className="grid mt-12 gap-[3.25rem] pb-[1.75rem] md:grid-cols-2 md:gap-x-[0.6875rem] md:px-[4.625rem] md:gap-y-[3rem] lg:grid-cols-3 lg:gap-x-[1.875rem] lg:px-6 lg:pb-16">
+        <div className="mt-12 grid gap-[3.25rem] pb-[1.75rem] md:grid-cols-2 md:gap-x-[0.6875rem] md:gap-y-[3rem] md:px-[4.625rem] lg:grid-cols-3 lg:gap-x-[1.875rem] lg:px-6 lg:pb-16">
           {directors.map((director) => (
             <Director
               key={director.id}
@@ -76,7 +76,7 @@ const Directors = () => {
           ))}
         </div>
       </div>
-      <div className="relative z-[1] -top-[6rem] ">
+      <div className="relative -top-[6rem] z-[1] ">
         <Image
           src={bgPattern3}
           alt="background pattern"

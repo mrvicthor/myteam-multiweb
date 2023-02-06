@@ -11,6 +11,8 @@ import Footer from "./footer";
 import Directors from "./directors";
 import Director from "./director";
 import Customers from "./customers";
+import Item from "./item";
+import InputField from "./inputField";
 
 export {
   Services,
@@ -26,4 +28,6 @@ export {
   Directors,
   Director,
   Customers,
+  Item,
+  InputField,
 };

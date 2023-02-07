@@ -11,7 +11,7 @@ const InputField = ({ label, register, required }: InputProps) => {
       type="text"
       {...register(label, { required })}
       placeholder={label}
-      className="placeholder:text-semibold w-full border-b border-[#FFFFFF] bg-transparent px-[0.875rem] pb-4 placeholder:text-[0.9375rem] placeholder:leading-[1.5625rem] placeholder:text-[#ffffff] placeholder:opacity-60"
+      className="placeholder:text-semibold w-full cursor-pointer border-b border-[#FFFFFF] bg-transparent px-[0.875rem] pb-4 outline-0 placeholder:text-[0.9375rem] placeholder:leading-[1.5625rem] placeholder:text-[#ffffff] placeholder:opacity-60 hover:border-[#79C8C7]"
     />
   );
 };

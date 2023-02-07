@@ -6,11 +6,11 @@ interface ItemProps {
 }
 const Item = ({ icon, content }: ItemProps) => {
   return (
-    <div className="flex items-center space-x-[1.4375rem]">
-      <div className="relative">
+    <div className="grid grid-cols-4 items-center gap-x-4">
+      <div className="relative col-span-1">
         <Image src={icon} alt="icon" />
       </div>{" "}
-      <p className="flex-1">{content}</p>
+      <p className="col-start-2 col-end-5">{content}</p>
     </div>
   );
 };

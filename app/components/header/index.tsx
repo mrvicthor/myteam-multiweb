@@ -12,12 +12,12 @@ const Header = () => {
 
   return (
     <header>
-      <div className="pt-[3rem] md:px-[2.5rem] container lg:pt-[4.5625rem]">
-        <div className="flex justify-between items-center text-[#ffffff]">
+      <div className="container pt-[3rem] md:px-[2.5rem]">
+        <div className="flex items-center justify-between text-[#ffffff]">
           <Link href="/" className="">
             <Image src={logo} alt="my-team logo" />
           </Link>
-          <nav className="hidden md:block md:mr-auto md:pl-[3rem] font-semibold text-lg text-[#ffffff]">
+          <nav className="hidden text-lg font-semibold text-[#ffffff] md:mr-auto md:block md:pl-[3rem]">
             <ul className="flex gap-[2.5rem]">
               <li className="cursor-pointer hover:text-[#f67e7e]">
                 <Link href="/">home</Link>
@@ -27,12 +27,12 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="hidden md:flex border-2 border-[#ffffff] w-[9.9375rem] h-[3rem] items-center justify-center rounded-full hover:bg-[#ffffff] hover:text-[#002529] hover:border-transparent cursor-pointer font-semibold ">
+          <div className="hidden h-[3rem] w-[9.9375rem] cursor-pointer items-center justify-center rounded-full border-2 border-[#ffffff] font-semibold hover:border-transparent hover:bg-[#ffffff] hover:text-[#002529] md:flex ">
             <Button href="/contact" title="contact us" />
           </div>
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="w-4 h-[1.0625rem] cursor-pointer border-[0] outline-0 z-[10000] md:hidden"
+            className="z-[10000] h-[1.0625rem] w-4 cursor-pointer border-[0] outline-0 md:hidden"
             aria-controls="primary__nav"
           >
             <span className="sr-only" aria-expanded="false">
@@ -45,7 +45,7 @@ const Header = () => {
           </button>
           {sidebarOpen && (
             <div
-              className="fixed top-0 bottom-0 left-0 right-0 bg-[#979797] z-10 opacity-40"
+              className="fixed top-0 bottom-0 left-0 right-0 z-10 bg-[#979797] opacity-40"
               onClick={() => setSidebarOpen(false)}
             />
           )}

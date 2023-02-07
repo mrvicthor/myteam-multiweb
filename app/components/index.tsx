@@ -13,6 +13,7 @@ import Director from "./director";
 import Customers from "./customers";
 import Item from "./item";
 import InputField from "./inputField";
+import TextArea from "./textarea";
 
 export {
   Services,
@@ -30,4 +31,5 @@ export {
   Customers,
   Item,
   InputField,
+  TextArea,
 };

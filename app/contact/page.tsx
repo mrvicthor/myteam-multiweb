@@ -1,5 +1,5 @@
 "use client";
-
+import toast, { Toaster } from "react-hot-toast";
 import { Item, InputField, TextArea } from "../components";
 import personIcon from "../../public/images/icon-person.svg";
 import cogIcon from "../../public/images/icon-cog.svg";
@@ -11,12 +11,21 @@ import Image from "next/image";
 import contactPattern from "../../public/images/bg-pattern-contact-2.svg";
 import bgPattern from "../../public/images/bg-pattern-about-2-contact-1.svg";
 
+const notify = () => toast("Success! Message sent...");
+
 const Contact = () => {
   const [hasMounted, setHasMounted] = useState<boolean>(false);
-  const { register, handleSubmit } = useForm<IFormValues>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<IFormValues>();
 
   const onSubmit: SubmitHandler<IFormValues> = (data) => {
-    alert(JSON.stringify(data));
+    notify();
+    reset();
+    console.log(data);
   };
   const items = [
     { id: 1, icon: personIcon, content: "The quality of our talent network" },
@@ -34,6 +43,14 @@ const Contact = () => {
 
   return (
     <section className="relative overflow-hidden pt-[5rem]  pb-[5.5rem] text-[#ffffff] md:py-[7rem] lg:pt-[4.5rem]">
+      <Toaster
+        toastOptions={{
+          style: {
+            background: "#06F304",
+            color: "white",
+          },
+        }}
+      />
       <div className="absolute hidden md:top-[6.25rem] md:-left-[6.25rem] md:block">
         <Image src={bgPattern} alt="contact-background-image-1" className="" />
       </div>
@@ -52,21 +69,61 @@ const Contact = () => {
           </div>
         </article>
         <div className="lg:mt-8">
-          <form className="space-y-[1.5rem]">
+          <form className="space-y-[1.5rem]" onSubmit={handleSubmit(onSubmit)}>
             <div>
-              <InputField label="Name" register={register} required />
+              <InputField
+                label="Name"
+                register={register}
+                required
+                errors={errors}
+              />
+              {errors?.Name && (
+                <p className="text-[#f67e7e]">This field is required</p>
+              )}
             </div>
             <div>
-              <InputField label="Email Address" register={register} required />
+              <InputField
+                label="Email Address"
+                register={register}
+                required
+                errors={errors}
+              />
+              {errors?.["Email Address"] && (
+                <p className="text-[#f67e7e]">This field is required</p>
+              )}
             </div>
             <div>
-              <InputField label="Company Name" register={register} required />
+              <InputField
+                label="Company Name"
+                register={register}
+                required
+                errors={errors}
+              />
+              {errors?.["Company Name"] && (
+                <p className="text-[#f67e7e]">This field is required</p>
+              )}
             </div>
             <div>
-              <InputField label="Title" register={register} required />
+              <InputField
+                label="Title"
+                register={register}
+                required
+                errors={errors}
+              />
+              {errors?.Title && (
+                <p className="text-[#f67e7e]">This field is required</p>
+              )}
             </div>
             <div>
-              <TextArea label="Message" register={register} required />
+              <TextArea
+                label="Message"
+                register={register}
+                required
+                errors={errors}
+              />
+              {errors?.Message && (
+                <p className="text-[#f67e7e]">This field is required</p>
+              )}
             </div>
             <button className="flex h-[3rem] w-[7.6875rem] items-center justify-center rounded-full bg-[#ffffff] text-[1.125rem] font-semibold leading-[1.75rem] text-[#004047] hover:bg-[#002529] hover:text-[#ffffff]">
               submit

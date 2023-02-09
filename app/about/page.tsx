@@ -11,7 +11,7 @@ const About = () => {
     <>
       <section className="relative overflow-hidden pt-[5rem]  pb-[1.25rem] text-[#ffffff] md:py-[7rem] lg:pt-[8.0625rem]">
         <div className=" container">
-          <article className="flex flex-col space-y-[1.125rem] md:items-center md:px-[6.875rem]  lg:flex-row lg:items-start lg:space-y-0 lg:space-x-[1.875rem] lg:px-8">
+          <article className="flex flex-col space-y-[1.125rem] md:items-center md:px-[6.875rem]  lg:flex-row lg:items-start lg:space-y-0 lg:space-x-[1.875rem] lg:px-2">
             <h1 className="text-center text-[2.5rem] font-bold leading-[2.5rem] md:text-[4rem] md:leading-[3.5rem] lg:w-[39.6875rem] lg:pt-4 lg:text-left lg:text-[6.25rem] lg:leading-[6.25rem]">
               About
             </h1>

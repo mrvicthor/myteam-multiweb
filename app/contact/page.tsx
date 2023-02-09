@@ -54,7 +54,7 @@ const Contact = () => {
       <div className="absolute hidden md:top-[6.25rem] md:-left-[6.25rem] md:block">
         <Image src={bgPattern} alt="contact-background-image-1" className="" />
       </div>
-      <div className=" container grid gap-y-[3.5rem] md:px-[6.875rem] lg:grid-cols-2 lg:gap-x-[1.875rem] lg:gap-y-0">
+      <div className=" container grid gap-y-[3.5rem] md:px-[7.9375rem] lg:grid-cols-2 lg:gap-x-[1.875rem] lg:gap-y-0 lg:px-8">
         <article className=" ">
           <h1 className="text-center text-[2.5rem] font-bold leading-[2.5rem] md:text-[4rem] md:leading-[3.5rem] lg:w-[39.6875rem] lg:pt-4 lg:text-left lg:leading-[6.25rem]">
             Contact

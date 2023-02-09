@@ -4,7 +4,7 @@ type InputProps = {
   label: Path<IFormValues>;
   errors: FieldErrors<IFormValues>;
   register: UseFormRegister<IFormValues>;
-  required: boolean;
+  required?: boolean;
 };
 const InputField = ({ label, register, required, errors }: InputProps) => {
   return (

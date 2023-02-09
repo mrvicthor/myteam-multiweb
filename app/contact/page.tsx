@@ -38,7 +38,7 @@ const Contact = () => {
   }, []);
 
   if (hasMounted == false) {
-    return <p>loading...</p>;
+    return null;
   }
 
   return (
@@ -46,7 +46,7 @@ const Contact = () => {
       <Toaster
         toastOptions={{
           style: {
-            background: "#06F304",
+            background: "#6CC494",
             color: "white",
           },
         }}
@@ -82,37 +82,43 @@ const Contact = () => {
               )}
             </div>
             <div>
-              <InputField
-                label="Email Address"
-                register={register}
-                required
-                errors={errors}
+              <input
+                type="text"
+                {...register("Email Address", {
+                  required: true,
+                  pattern: {
+                    value: /[^\s@]+@[^\s@]+\.[^\s@]+/,
+                    message: "Please use a valid email address",
+                  },
+                })}
+                placeholder="Email Address"
+                className={`${
+                  errors ? "placeholder:text-[#f67e7e]" : ""
+                } placeholder:text-semibold w-full cursor-pointer border-b border-[#FFFFFF] bg-transparent px-[0.875rem] pb-4 outline-0 placeholder:text-[0.9375rem] placeholder:leading-[1.5625rem] placeholder:text-[#ffffff] placeholder:opacity-60 hover:border-[#79C8C7] focus:text-[#ffffff]`}
               />
-              {errors?.["Email Address"] && (
-                <p className="text-[#f67e7e]">This field is required</p>
-              )}
+
+              {errors?.["Email Address"] &&
+                errors["Email Address"].type == "required" && (
+                  <p className="text-[#f67e7e]" role="alert">
+                    This field is required
+                  </p>
+                )}
+              {errors?.["Email Address"] &&
+                errors["Email Address"].type == "pattern" && (
+                  <p className="text-[#f67e7e]" role="alert">
+                    {errors["Email Address"].message}
+                  </p>
+                )}
             </div>
             <div>
               <InputField
                 label="Company Name"
                 register={register}
-                required
                 errors={errors}
               />
-              {errors?.["Company Name"] && (
-                <p className="text-[#f67e7e]">This field is required</p>
-              )}
             </div>
             <div>
-              <InputField
-                label="Title"
-                register={register}
-                required
-                errors={errors}
-              />
-              {errors?.Title && (
-                <p className="text-[#f67e7e]">This field is required</p>
-              )}
+              <InputField label="Title" register={register} errors={errors} />
             </div>
             <div>
               <TextArea
